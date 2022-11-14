@@ -30,6 +30,12 @@ background-color: #ccc;
   background-color: #333;
      display:none;
 }
+.clicked .cardBack{
+  display: none;
+}
+.clicked .cardFront{
+  display: block;
+}
 .pic1 .cardFront{
   background-image: url(images/retro_android.png);
   background-size: cover;
