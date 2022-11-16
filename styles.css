@@ -6,7 +6,7 @@
   height: 80vh;
   position: relative;
   margin: 10vh auto;
-  border: 1px solid DarkBlue;
+ 
 }
 .card{
   position: relative;
@@ -14,7 +14,6 @@
   height: 20vw;
   float: left;
   border: 1vw solid white;
-background-color: #ccc;
 }
 
 .card div{ 
@@ -43,4 +42,7 @@ background-color: #ccc;
 .pic2 .cardFront{
   background-image: url(images/stingrays.png);
   background-size: cover;
+}
+.card.matched div {
+  display: none;
 }
