@@ -44,11 +44,11 @@
   background-size: cover;
 }
 .pic3 .cardFront{
-  background-image: url(images/smoking_elephant.jpg);
+  background-image: url(images/submarine.png);
   background-size: cover;
 }
 .pic4 .cardFront{
-  background-image: url(images/dog.jpg);
+  background-image: url(images/dead_astronaut.png);
   background-size: cover;
 }
 .card.matched div {
