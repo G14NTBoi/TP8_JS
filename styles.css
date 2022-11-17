@@ -43,6 +43,14 @@
   background-image: url(images/stingrays.png);
   background-size: cover;
 }
+.pic3 .cardFront{
+  background-image: url(images/smoking_elephant.jpg);
+  background-size: cover;
+}
+.pic4 .cardFront{
+  background-image: url(images/dog.jpg);
+  background-size: cover;
+}
 .card.matched div {
   display: none;
 }
