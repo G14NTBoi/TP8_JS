@@ -44,7 +44,12 @@ function cardCompare (){
     unflipCards(clickedCards[0], clickedCards[1]);
   }
 
+
+
+  
+}
 function removeCards(cardA, cardB) {
+  pause = setTimeout(function() {
    cardA.classList.remove("clicked");
   cardB.classList.remove("clicked");
   
@@ -52,16 +57,42 @@ function removeCards(cardA, cardB) {
    cardB.classList.add("matched");
   
   cardsClicked = 0;
+    checkWinning();
+  }, 1000);
 }
 function unflipCards(cardA, cardB){
+  pause = setTimeout(function() {
   cardA.classList.remove("clicked");
   cardB.classList.remove("clicked");
   cardsClicked = 0;
+  }, 1000);
 }
+function checkWinning() {
+   remainingCards = cardList = document.querySelectorAll (".card");
+  countCards = remainingCards.length;
+  
+  for(c = 0; c < remainingCards.length; c++)
+    {
+       if (!remainingCards[c].classList.contains("matched"))
+         {
+           return;
+         }
+    }
+   document.getElementById("mainTable").innerHTML = "You Matched All of The Cards!"
 }
-
+function shuffleCards() {
+ table = document.querySelector("#mainTable");
+  cardCount =table.children.length;
+  
+  for (c = 0; c < cardCount; c++){
+    randomCard = math.floor( math.random() * cardCount);
+    cardToMove = table.children[randomCard];
+    table.appendChild(cardToMove);
+  }
+}
 
 window.onload = function (){
+  shuffleCards();
  cardList = document.querySelectorAll (".card");
   cardCount = cardList.length; // number of cards on table.
   
