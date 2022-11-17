@@ -82,10 +82,10 @@ function checkWinning() {
 }
 function shuffleCards() {
  table = document.querySelector("#mainTable");
-  cardCount =table.children.length;
+  cardCount = table.children.length;
   
   for (c = 0; c < cardCount; c++){
-    randomCard = math.floor( math.random() * cardCount);
+    randomCard = Math.floor( Math.random() * cardCount);
     cardToMove = table.children[randomCard];
     table.appendChild(cardToMove);
   }
